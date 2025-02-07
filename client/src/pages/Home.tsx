@@ -7,8 +7,9 @@ const Home = () => {
   return (
     <Box
       sx={{
+        width: '100vw',
         height: '90vh',
-        background: 'url("/space-background.jpg")',
+        background: 'url("https://images-api.nasa.gov/asset/as11-40-5874")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
@@ -16,17 +17,17 @@ const Home = () => {
         justifyContent: 'center',
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="xl">
         <Box
           sx={{
             textAlign: 'center',
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backgroundColor: 'rgba(74, 116, 215, 0.7)',
             padding: 4,
             borderRadius: 2,
           }}
         >
           <Typography variant="h2" component="h1" gutterBottom>
-            Asteroids NASA App
+            Asteroids NASA
           </Typography>
           <Typography variant="h5" component="h2" gutterBottom>
             Explore Near-Earth Objects with NASA's Database

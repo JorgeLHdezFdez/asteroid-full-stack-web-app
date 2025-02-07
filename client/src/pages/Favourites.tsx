@@ -6,7 +6,7 @@ const Favorites = () => {
   const { favorites, addToFavorites, isFavorite } = useFavorites()
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="xl" sx={{ width: '100vw', py: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom>
         Favorite Asteroids
       </Typography>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Container, Grid, TextField, Box, CircularProgress, Alert } from '@mui/material'
+import { Container, Grid, Box, CircularProgress, Alert } from '@mui/material'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
@@ -23,7 +23,7 @@ const AsteroidsList = () => {
   const sortedAsteroids = asteroids?.sort((a, b) => a.name.localeCompare(b.name))
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="xl" sx={{ py: 4 }}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <Box sx={{ mb: 4, display: 'flex', gap: 2 }}>
           <DatePicker
